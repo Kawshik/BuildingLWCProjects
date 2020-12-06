@@ -1,0 +1,14 @@
+.nav-container{
+    /* border:1px solid black; */
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.logo{
+    /* border:1px solid black; */
+    display:flex;
+    align-items: center;
+}

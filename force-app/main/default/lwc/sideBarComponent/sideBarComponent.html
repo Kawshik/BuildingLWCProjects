@@ -1,0 +1,11 @@
+<template>
+    <lightning-card>
+        <lightning-vertical-navigation>
+            <lightning-vertical-navigation-section label="Objects Navigation">
+                <template iterator:it={objects}>
+                    <lightning-vertical-navigation-item key={it.value} label={it.value} name={it.value}></lightning-vertical-navigation-item>
+                </template>
+            </lightning-vertical-navigation-section>
+        </lightning-vertical-navigation>
+    </lightning-card>
+</template>

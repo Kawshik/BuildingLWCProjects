@@ -1,0 +1,57 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0052w000007k3hrAAA",
+      "createdByName": "Kawshik Lodh",
+      "createdDate": "2020-11-26T08:17:54.000Z",
+      "fileName": "triggers/BulkTriggerAssignment.trigger",
+      "fullName": "BulkTriggerAssignment",
+      "id": "01q2w000000F0scAAC",
+      "lastModifiedById": "0052w000007k3hrAAA",
+      "lastModifiedByName": "Kawshik Lodh",
+      "lastModifiedDate": "2020-12-02T06:51:23.000Z",
+      "manageableState": "unmanaged",
+      "type": "ApexTrigger"
+    },
+    {
+      "createdById": "0052w000007k3hrAAA",
+      "createdByName": "Kawshik Lodh",
+      "createdDate": "2020-12-01T16:19:06.000Z",
+      "fileName": "triggers/AccountDeletion.trigger",
+      "fullName": "AccountDeletion",
+      "id": "01q2w000000F1PJAA0",
+      "lastModifiedById": "0052w000007k3hrAAA",
+      "lastModifiedByName": "Kawshik Lodh",
+      "lastModifiedDate": "2020-12-04T06:34:12.000Z",
+      "manageableState": "unmanaged",
+      "type": "ApexTrigger"
+    },
+    {
+      "createdById": "0052w000007k3hrAAA",
+      "createdByName": "Kawshik Lodh",
+      "createdDate": "2020-11-27T04:51:14.000Z",
+      "fileName": "triggers/ParkingValidation.trigger",
+      "fullName": "ParkingValidation",
+      "id": "01q2w000000F0wyAAC",
+      "lastModifiedById": "0052w000007k3hrAAA",
+      "lastModifiedByName": "Kawshik Lodh",
+      "lastModifiedDate": "2020-12-02T08:29:18.000Z",
+      "manageableState": "unmanaged",
+      "type": "ApexTrigger"
+    },
+    {
+      "createdById": "0052w000007k3hrAAA",
+      "createdByName": "Kawshik Lodh",
+      "createdDate": "2020-11-27T05:20:33.000Z",
+      "fileName": "triggers/UpdateParkingAfterFacilityUpdate.trigger",
+      "fullName": "UpdateParkingAfterFacilityUpdate",
+      "id": "01q2w000000F0xSAAS",
+      "lastModifiedById": "0052w000007k3hrAAA",
+      "lastModifiedByName": "Kawshik Lodh",
+      "lastModifiedDate": "2020-12-04T04:55:20.000Z",
+      "manageableState": "unmanaged",
+      "type": "ApexTrigger"
+    }
+  ]
+}
