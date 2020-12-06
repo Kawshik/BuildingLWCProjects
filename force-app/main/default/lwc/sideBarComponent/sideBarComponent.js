@@ -2,9 +2,6 @@ import { LightningElement, track, wire } from 'lwc';
 import getAllObjects from '@salesforce/apex/ResortAppClass.getAllObjects';
 import User_Id from '@salesforce/user/Id';
 export default class SideBarComponent extends LightningElement {
-    
-    objectsList = ['Customer Details','Reservations','Facilities','Parkings','Pick Up Vehicles']
-
     @track objects;
     @track error;
     
