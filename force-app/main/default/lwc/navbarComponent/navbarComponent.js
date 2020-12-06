@@ -4,11 +4,9 @@ import User_Id from '@salesforce/user/Id';
 export default class NavbarComponent extends LightningElement {
     @track data = 'Brand Name';
     @track timestamp = new Date();
-
-    // @api
-    // refresh() {
-    //     this.timestamp = new Date();
-    // }
+    @track date = this.timestamp.toLocaleDateString();
+    @track time = this.timestamp.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+    @track error;
 
     @wire(getCurrentAppName,{userId:User_Id}) appName({error,data}){
         if(data){
@@ -29,6 +27,8 @@ export default class NavbarComponent extends LightningElement {
     startClock(){ 
         setInterval(() => {
             this.timestamp = new Date();
-        }, 1000);
+            this.date = this.timestamp.toLocaleDateString();
+            this.time = this.timestamp.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+        }, 5000);
     }
 }
