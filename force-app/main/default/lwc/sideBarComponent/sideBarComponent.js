@@ -4,7 +4,7 @@ import User_Id from '@salesforce/user/Id';
 export default class SideBarComponent extends LightningElement {
     @track objects;
     @track error;
-    
+
     @wire(getAllObjects,{userId: User_Id}) 
     wireObjects({error,data}){
         if(data){
