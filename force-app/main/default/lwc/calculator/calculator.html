@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="Calculator">
+        <div style="display:flex;justify-content:center;align-items:center;">
+            <div class="calc-board"> 
+                <lightning-input style="border-radius: 0px; background-color:black;" data-name="exprWindow" value={expression}></lightning-input>
+                <table style="border-spacing: 10px;">
+                    <tr>
+                        <td><div onclick={getName} class="cell red-cell">AC</div></td>
+                        <td><div onclick={getName} class="cell red-cell">C</div></td>
+                        <td><div onclick={getName} class="cell yellow-cell">%</div></td>
+                        <td><div onclick={getName} class="cell yellow-cell">/</div></td>
+                    </tr>
+                    <tr>
+                        <td><div onclick={getName} class="cell dark-cell">7</div></td>
+                        <td><div onclick={getName} class="cell dark-cell">8</div></td>
+                        <td><div onclick={getName} class="cell dark-cell">9</div></td>
+                        <td><div onclick={getName} class="cell yellow-cell">x</div></td>
+                    </tr>
+                    <tr>
+                        <td><div onclick={getName} class="cell dark-cell">4</div></td>
+                        <td><div onclick={getName} class="cell dark-cell">5</div></td>
+                        <td><div onclick={getName} class="cell dark-cell">6</div></td>
+                        <td><div onclick={getName} class="cell yellow-cell">-</div></td>
+                    </tr>
+                    <tr>
+                        <td><div onclick={getName} class="cell dark-cell">1</div></td>
+                        <td><div onclick={getName} class="cell dark-cell">2</div></td>
+                        <td><div onclick={getName} class="cell dark-cell">3</div></td>
+                        <td><div onclick={getName} class="cell yellow-cell">+</div></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div onclick={getName} class="cell dark-cell">0</div></td>
+                        <td><div onclick={getName} class="cell dark-cell">.</div></td>
+                        <td><div onclick={getName} class="cell green-cell">=</div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </lightning-card>
+</template>

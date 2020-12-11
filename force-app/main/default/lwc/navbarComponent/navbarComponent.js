@@ -1,7 +1,9 @@
 import { LightningElement, track, wire } from 'lwc';
 import getCurrentAppName from '@salesforce/apex/ResortAppClass.getCurrentAppName';
 import User_Id from '@salesforce/user/Id';
+
 export default class NavbarComponent extends LightningElement {
+   
     @track data = 'Brand Name';
     @track timestamp = new Date();
     @track date = this.timestamp.toLocaleDateString();
@@ -20,8 +22,8 @@ export default class NavbarComponent extends LightningElement {
     }
 
     constructor() {
-        super(); // Must be called first
-        // this.startClock();
+        super();
+        this.startClock();
     }
 
     startClock(){ 

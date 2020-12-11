@@ -49,10 +49,10 @@ public with sharing class ResortAppClass {
         
         //Gets all the apps
         List<Schema.DescribeTabSetResult> allApps = Schema.describeTabs();
-        //Iterate through each App and get all the Obkects
+        //Iterate through each App and get all the Objects
         for (Schema.DescribeTabSetResult oneApp : allApps) {
             //system.debug(oneApp.getLabel());
-            // System.debug('Namespace ' + oneApp.getNamespace());555
+            // System.debug('Namespace ' + oneApp.getNamespace());
             if(oneApp.getLabel().equals(mutilatedAppName)){
                 List<Schema.DescribeTabResult> appTabs = oneApp.getTabs();
                 for (Integer i = 0; i < appTabs.size(); i++) {
