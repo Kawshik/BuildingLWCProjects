@@ -51,14 +51,15 @@ public with sharing class ResortAppClass {
         List<Schema.DescribeTabSetResult> allApps = Schema.describeTabs();
         //Iterate through each App and get all the Objects
         for (Schema.DescribeTabSetResult oneApp : allApps) {
-            system.debug(oneApp.getLabel() + ' is Selected= ' + oneApp.isSelected());
+            // system.debug(oneApp.getLabel() + ' is Selected= ' + oneApp.isSelected());
             // System.debug('Namespace ' + oneApp.getNamespace());
             if(oneApp.getLabel().equals(mutilatedAppName)){
                 List<Schema.DescribeTabResult> appTabs = oneApp.getTabs();
                 for (Integer i = 0; i < appTabs.size(); i++) {
+                    //Checks is the last character in the URL is 'o'
                     if(appTabs[i].getUrl().substring(appTabs[i].getUrl().length()-1, appTabs[i].getUrl().length()) == 'o'){
                         objects.add(appTabs[i].getLabel());
-                        System.debug((i + 1) + '. Tab Name: ' + appTabs[i].getLabel() + ' URL: ' + appTabs[i].getUrl());
+                        System.debug((i + 1) + '. Tab Name: ' + appTabs[i].getLabel() + ' Info: ' + appTabs[i].getSobjectName() + ' URL: ' + appTabs[i].getUrl());
                     }  
                 }
             }

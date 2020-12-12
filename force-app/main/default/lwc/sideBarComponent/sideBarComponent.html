@@ -3,10 +3,10 @@
         <lightning-vertical-navigation>
             <lightning-vertical-navigation-section label="Objects Navigation">
                 <template iterator:it={objects}>
-                    <lightning-vertical-navigation-item key={it.value} label={it.value} name={it.value}></lightning-vertical-navigation-item>
+                    <lightning-vertical-navigation-item key={it.value} label={it.value} name={it.value} onclick={handleClick}></lightning-vertical-navigation-item>
                 </template>
             </lightning-vertical-navigation-section>
         </lightning-vertical-navigation>
-      <c-object-data-component object-name="Kawshik"></c-object-data-component>
+      <!-- <c-object-data-component object-name="Kawshik"></c-object-data-component> -->
     </lightning-card>
 </template>
