@@ -89,5 +89,94 @@
         "component://c/objectDataComponent@en-GB": {
             "dev": "b186a11fdd"
         }
+    },
+    "bbbfaa0096": {
+        "component://@webruntime/app@en-GB": {
+            "dev": "ede600bfef"
+        },
+        "component://localdevserver/preview@en-GB": {
+            "dev": "d8da1a15eb"
+        },
+        "component://c/sideBarComponent@en-GB": {
+            "dev": "9dc348ab6a"
+        },
+        "component://c/objectDataComponent@en-GB": {
+            "dev": "b186a11fdd"
+        },
+        "component://localdevserver/home@en-GB": {
+            "dev": "c0efafa63a"
+        },
+        "component://c/calculator@en-GB": {
+            "dev": "c815e7800c"
+        }
+    },
+    "13ea96617c": {
+        "component://@webruntime/app@en-GB": {
+            "dev": "ede600bfef"
+        },
+        "component://localdevserver/preview@en-GB": {
+            "dev": "d8da1a15eb"
+        },
+        "component://c/sideBarComponent@en-GB": {
+            "dev": "9812e7ca55"
+        },
+        "component://c/objectDataComponent@en-GB": {
+            "dev": "b186a11fdd"
+        }
+    },
+    "115449b65e": {
+        "component://@webruntime/app@en-GB": {
+            "dev": "ede600bfef"
+        },
+        "component://localdevserver/preview@en-GB": {
+            "dev": "d8da1a15eb"
+        },
+        "component://c/calculator@en-GB": {
+            "dev": "c815e7800c"
+        }
+    },
+    "9d6f5129ea": {
+        "component://@webruntime/app@en-GB": {
+            "dev": "ede600bfef"
+        },
+        "component://localdevserver/preview@en-GB": {
+            "dev": "d8da1a15eb"
+        },
+        "component://c/calculator@en-GB": {
+            "dev": "c815e7800c"
+        }
+    },
+    "9370e95511": {
+        "component://@webruntime/app@en-GB": {
+            "dev": "ede600bfef"
+        },
+        "component://localdevserver/preview@en-GB": {
+            "dev": "d8da1a15eb"
+        },
+        "component://c/calculator@en-GB": {
+            "dev": "c815e7800c"
+        }
+    },
+    "cbc7ea8dac": {
+        "component://@webruntime/app@en-GB": {
+            "dev": "ede600bfef"
+        },
+        "component://localdevserver/preview@en-GB": {
+            "dev": "d8da1a15eb"
+        },
+        "component://c/objectDataComponent@en-GB": {
+            "dev": "9e6a87ffa7"
+        }
+    },
+    "25732567bd": {
+        "component://@webruntime/app@en-GB": {
+            "dev": "ede600bfef"
+        },
+        "component://localdevserver/preview@en-GB": {
+            "dev": "d8da1a15eb"
+        },
+        "component://c/objectDataComponent@en-GB": {
+            "dev": "9e6a87ffa7"
+        }
     }
 }
