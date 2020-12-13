@@ -2,8 +2,8 @@
     <lightning-card>
         <lightning-vertical-navigation>
             <lightning-vertical-navigation-section label="Objects Navigation">
-                <template iterator:it={objects}>
-                    <lightning-vertical-navigation-item key={it.value} label={it.value} name={it.value} onclick={handleClick}></lightning-vertical-navigation-item>
+                <template for:each={objects} for:item="object">
+                    <lightning-vertical-navigation-item key={object.objectTabName} label={object.objectTabName} name={object.objectAPIName} onclick={handleClick}></lightning-vertical-navigation-item>    
                 </template>
             </lightning-vertical-navigation-section>
         </lightning-vertical-navigation>

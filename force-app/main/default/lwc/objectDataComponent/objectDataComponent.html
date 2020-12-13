@@ -1,5 +1,11 @@
 <template>
     <lightning-card title={objectName}>
-        
+        <template if:true={objectAPI}>
+            <lightning-datatable
+                key-field="id"
+                data={records}
+                columns={columns}>
+            </lightning-datatable>
+        </template>    
     </lightning-card>
 </template>
