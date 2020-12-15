@@ -1,8 +1,9 @@
 <template>
     <lightning-card title="Calculator">
-        <div style="display:flex;justify-content:center;align-items:center;">
+        <div class="calc-board-container">
             <div class="calc-board"> 
-                <lightning-input style="border-radius: 0px; background-color:black;" data-name="exprWindow" value={expression}></lightning-input>
+                <lightning-input data-name="exprWindow" value={expression} disabled="true"></lightning-input>
+                
                 <table style="border-spacing: 10px;">
                     <tr>
                         <td><div onclick={getName} class="cell red-cell">AC</div></td>
@@ -14,7 +15,7 @@
                         <td><div onclick={getName} class="cell dark-cell">7</div></td>
                         <td><div onclick={getName} class="cell dark-cell">8</div></td>
                         <td><div onclick={getName} class="cell dark-cell">9</div></td>
-                        <td><div onclick={getName} class="cell yellow-cell">x</div></td>
+                        <td><div onclick={getName} class="cell yellow-cell">*</div></td>
                     </tr>
                     <tr>
                         <td><div onclick={getName} class="cell dark-cell">4</div></td>

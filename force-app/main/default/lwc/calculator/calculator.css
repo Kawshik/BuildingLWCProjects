@@ -1,3 +1,9 @@
+.calc-board-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
 .calc-board{
     width: 250px;
     background-color: black;

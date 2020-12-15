@@ -1,8 +1,6 @@
 import { LightningElement, track } from 'lwc';
 
 export default class Calculator extends LightningElement {
-    @track result;
-
     @track expression = '0';
 
     getName(event){
@@ -16,13 +14,16 @@ export default class Calculator extends LightningElement {
         }
 
         else if(buttonName === "C"){
-            this.expression = this.expression.substring(0, this.expression.length - 1);
+            // if(this.result){
+            //     this.result = this.result.substring(0, this.result.length - 1);
+            // } else {
+                this.expression = this.expression.substring(0, this.expression.length - 1);
         }
 
         else if(buttonName === "="){
-            console.log(this.expression);
+            // console.log(this.expression);
             //event.target.label = this.expression;
-            console.log(this.evaluate(this.expression.trim()));
+            // console.log(this.evaluate(this.expression.trim()));
             this.expression = this.evaluate(this.expression.trim());
         } 
         
@@ -39,9 +40,9 @@ export default class Calculator extends LightningElement {
         else return false;
     }
 
-    evaluate(exp){
-        var res;
-        
+    evaluate(exp){        
+        if (exp.length === 0) return 0;
+
         // Remove last character if is an operator
         var expLastChar = exp.substring(exp.length - 1, exp.length);
         while(this.isOperator(expLastChar)){
@@ -56,8 +57,16 @@ export default class Calculator extends LightningElement {
             }
         }
 
-        
+        // Sanity Check for the Expression
+        var regex = new RegExp(/^[0-9+*%./-]*$/);
+        var result = regex.test(exp);
 
-        return exp;
+        if(result){
+            // return eval(exp)+""; //Do not use eval. It is malicious
+        } else {
+            return 0;
+        }
+        
+        // return (res)?res:0;
     }
 }
